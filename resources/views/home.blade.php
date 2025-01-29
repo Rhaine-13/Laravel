@@ -11,7 +11,8 @@
     <p>Hi</p>
     <a href="{{ route("testing") }}">Go ot test</a>
 
-    <form action="/formSubmitted" method="post">
+    <form action="{{ url('/formSubmitted') }}" method="post">
+        @csrf
         <label for="fullname">FullName:</label>
         <input type="text" id="fullname" name="fullname" placeholder="Type your fullname" required>
         <br><br>
