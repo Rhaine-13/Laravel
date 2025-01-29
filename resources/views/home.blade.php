@@ -9,7 +9,7 @@
 </head>
 <body>
     <p>Hi</p>
-    <a href="{{ url("/test") }}">Go ot test</a>
+    <a href="{{ route("testing") }}">Go ot test</a>
 
     <form action="/formSubmitted" method="post">
         <label for="fullname">FullName:</label>

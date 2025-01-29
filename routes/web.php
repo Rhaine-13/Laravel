@@ -11,6 +11,10 @@ Route::get('/portfolio/{name}', function ($name) {
     return $name;  
 });
 
-Route::get('/test', function () {
-    return "The test";  
+Route::get('/portfolio/{firstname}/{lastname}', function ($firstname, $lastname) {
+    return $firstname . " " . $lastname;  
 });
+
+Route::get('/test', function () {
+    return "This is a test!";
+})->name("testing");
